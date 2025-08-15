@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
+    <main >
       <section className="relative w-full
       h-screen overflow-hidden max-h-1080 mt-4 rounded-4xl">
         {!isLoaded && <div className="flex justify-center items-center 

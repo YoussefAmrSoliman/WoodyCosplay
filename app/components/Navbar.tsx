@@ -14,9 +14,9 @@ const Navbar = () => {
             </div>
             <h1 className="text-lg font-bold">Woody Cosplay</h1>
             
-            <div className={`md:hidden absolute top-full right-0 w-40
+            <div className={`md:hidden absolute top-full  w-40
                 bg-white shadow-lg rounded-3xl mt-2 z-50 flex flex-col
-                ${isOpen ? '-translate-x-1 opacity-100': 'translate-x-full opacity-0'} 
+                ${isOpen ? '-right-[-0.5%] opacity-100': 'right-[-100%] opacity-0'} 
                 transition-all duration-300`}>
                 <button className="py-2 px-4
                     text-gray-900 hover:bg-gray-100

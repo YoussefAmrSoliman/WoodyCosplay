@@ -91,14 +91,14 @@ export default function Home() {
       <section 
         ref={section1Ref}
         id="section1"
-        className={`py-16 transition-all duration-700 ease-in-out ${
+        className={`py-16 px-4 transition-all duration-700 ease-in-out ${
           visibleSections.has('section1')
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-8'
         }`}
       >
         <div className="flex flex-row justify-between items-center gap-12 px-6 md:px-36 "> 
-          <div className="flex flex-col justify-center items-center mb-8 max-w-[30vw] max-h-[80vh]">
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[28vw] max-h-[70vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Bring Your Favorite Characters to Life</h3>
             <p className="text-gray-200 mt-2">Custom-crafted cosplay costumes, props, and accessories
                — handmade with precision, passion, and screen-accurate detail. Whether you&apos;re 
@@ -120,7 +120,7 @@ export default function Home() {
       <section 
         ref={section2Ref}
         id="section2"
-        className={`py-16 transition-all duration-700 ease-in-out ${
+        className={`py-16 px-4 transition-all duration-700 ease-in-out ${
           visibleSections.has('section2')
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-8'
@@ -135,7 +135,7 @@ export default function Home() {
               height={608}
             />
           </div>
-          <div className="flex flex-col justify-center items-center mb-8 max-w-[30vw] max-h-[70vh]">
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[25vw] max-h-[70vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Your character. Your story. Your moment.</h3>
             <p className="text-gray-200 mt-2">From anime icons to legendary heroes,
                we handcraft cosplay costumes and props so real,

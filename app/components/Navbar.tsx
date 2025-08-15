@@ -7,7 +7,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="flex flex-row items-center bg-gray-800 text-white p-4 sticky top-0 z-10 rounded-b-2xl">
+        <nav className="flex flex-row items-center bg-gray-800/60 text-white p-4 
+        sticky top-0 z-10 rounded-b-4xl backdrop-blur-md">
             <div className="md:hidden absolute right-4">
                 <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>

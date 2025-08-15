@@ -10,7 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --animate-fadeIn: fadeIn 1.5s ease-in-out;
+  --animate-fadeIn-1: fadeIn 1.5s ease-in-out;
+  --animate-fadeIn-2: fadeIn 2.5s ease-in-out;
 
   @keyframes fadeIn {
     0% {

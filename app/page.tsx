@@ -1,103 +1,104 @@
+"use client"
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <main className=" ">
+      <section className="relative w-full
+      h-screen overflow-hidden max-h-1080">
+      {!isLoaded && <div className="flex justify-center items-center 
+      h-screen z-20">
+      <video 
+        src="/loading.webm"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-24 h-24"
+        />
+    </div>}
+      <div className={`absolute inset-0
+        ${isLoaded ? "max-h-screen " : "max-h-0 overflow-hidden"} 
+        transition-all duration-500`}>
+        <Image
+          src={"/Hero.png"}
+          alt="Woody Cosplay"
+          fill
+          sizes="100vw"
+          className={`object-cover [object-position:top] 
+            transition-all duration-1000`}
+          onLoad={() => setIsLoaded(true)}
+        />
+      </div>
+      <div className="relative z-10 h-full flex items-center">
+        <div className="container mx-auto px-4">
+            <div className="max-w-2xl">
+        <div className="overflow-hidden flex justify-center items-center mt-4">
+        <h1 className=" font-bold text-gray-100
+        animate-fadeIn whitespace-nowrap text-[min(4vw,40px)]"
+        >Welcome to Woody Cosplay</h1>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      
+      <section className="py-16">
+
+
+        <div className="flex flex-row justify-between items-center px-36"> 
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[400px]">
+            <h3 className="text-2xl font-extrabold text-gray-400">Bring Your Favorite Characters to Life</h3>
+            <p className="text-gray-200 mt-2">Custom-crafted cosplay costumes, props, and accessories
+               — handmade with precision, passion, and screen-accurate detail. Whether you’re 
+               prepping for Comic-Con, a photoshoot, or your next epic TikTok reveal,
+                we make your cosplay dreams a reality.
+            </p>
+          </div>
+          <div className="container max-w-[400px] max-h-[600px] rounded-4xl overflow-hidden">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/first_section.jpeg"
+              alt="First Section Image"
+              width={852}
+              height={1280}
+              
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+          </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="py-16">
+
+
+        <div className="flex flex-row justify-between items-center px-36"> 
+          <div className="container max-w-[400px] max-h-[600px] rounded-4xl overflow-hidden">
+            <Image
+              src="/second_section.jpeg"
+              alt="Second Section Image"
+              width={852}
+              height={1280}
+              
+            />
+
+          </div>
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[400px]">
+            <h3 className="text-2xl font-extrabold text-gray-400">Your character. Your story. Your moment.</h3>
+            <p className="text-gray-200 mt-2">From anime icons to legendary heroes,
+               we handcraft cosplay costumes and props so real,
+                you’ll feel like you just walked off the set.
+                 Battle-ready armor, intricate gowns, screen-accurate props — all made to fit you perfectly.
+            </p>
+          </div>
+          
+
+        </div>
+      </section>
+    </main>
   );
 }

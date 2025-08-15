@@ -25,7 +25,7 @@ export default function Home() {
         });
       },
       {
-        threshold: 0.2, // Trigger when 20% visible
+        threshold: 0.25, // Trigger when 20% visible
         rootMargin: '0px 0px -100px 0px' // Fade out earlier when scrolling away
       }
     );
@@ -97,8 +97,8 @@ export default function Home() {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="flex flex-row justify-between items-center  px-6 md:px-36 "> 
-          <div className="flex flex-col justify-center items-center mb-8 max-w-[28vw] max-h-[70vh]">
+        <div className="flex flex-col md:flex-row justify-between gap-12 items-center  px-6 md:px-36 "> 
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[60vw] md:max-w-[30vw] max-h-[70vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Bring Your Favorite Characters to Life</h3>
             <p className="text-gray-200 mt-2">Custom-crafted cosplay costumes, props, and accessories
                — handmade with precision, passion, and screen-accurate detail. Whether you&apos;re 
@@ -106,7 +106,7 @@ export default function Home() {
                 we make your cosplay dreams a reality.
             </p>
           </div>
-          <div className="container max-w-[30vw] max-h-[80vh]  rounded-4xl overflow-hidden">
+          <div className="container max-w-[50vw] md:max-w-[30vw] max-h-[80vh]  rounded-4xl overflow-hidden">
             <Image
               src="/first_section.jpeg"
               alt="First Section Image"
@@ -126,8 +126,8 @@ export default function Home() {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="flex flex-row justify-between  items-center px-6 md:px-36"> 
-          <div className="container max-w-[40vw] max-h-[50vh]  rounded-4xl overflow-hidden">
+        <div className="flex flex-col md:flex-row justify-between gap-12 items-center px-6 md:px-36"> 
+          <div className="container max-w-[60vw]  max-h-[50vh]  rounded-4xl overflow-hidden">
             <Image
               src="/second_section.jpeg"
               alt="Second Section Image"
@@ -135,7 +135,7 @@ export default function Home() {
               height={608}
             />
           </div>
-          <div className="flex flex-col justify-center items-center mb-8 max-w-[25vw] max-h-[70vh]">
+          <div className="flex flex-col justify-center items-center mb-8 max-w-[60vw] md:max-w-[30vw] max-h-[70vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Your character. Your story. Your moment.</h3>
             <p className="text-gray-200 mt-2">From anime icons to legendary heroes,
                we handcraft cosplay costumes and props so real,

@@ -101,7 +101,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center mb-8 max-w-[30vw] max-h-[80vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Bring Your Favorite Characters to Life</h3>
             <p className="text-gray-200 mt-2">Custom-crafted cosplay costumes, props, and accessories
-               — handmade with precision, passion, and screen-accurate detail. Whether you're 
+               — handmade with precision, passion, and screen-accurate detail. Whether you&apos;re 
                prepping for Comic-Con, a photoshoot, or your next epic TikTok reveal,
                 we make your cosplay dreams a reality.
             </p>
@@ -139,7 +139,7 @@ export default function Home() {
             <h3 className="text-2xl font-extrabold text-gray-400">Your character. Your story. Your moment.</h3>
             <p className="text-gray-200 mt-2">From anime icons to legendary heroes,
                we handcraft cosplay costumes and props so real,
-                you'll feel like you just walked off the set.
+                you&apos;ll feel like you just walked off the set.
                  Battle-ready armor, intricate gowns, screen-accurate props — all made to fit you perfectly.
             </p>
           </div>

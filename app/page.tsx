@@ -76,10 +76,10 @@ export default function Home() {
               <div className="overflow-hidden flex flex-col justify-center
                               items-center mt-4">
                 <h1 className=" font-extrabold text-gray-100
-                animate-fadeIn-1 whitespace-nowrap text-[min(4vw,40px)]"
+                animate-fadeIn-1 whitespace-nowrap text-[min(6vw,40px)]"
                 >Welcome to Woody Cosplay</h1>
                 <p className="text-gray-200
-                animate-fadeIn-2 whitespace-nowrap text-[min(2vw,25px)]">
+                animate-fadeIn-2 whitespace-nowrap text-[min(3vw,25px)]">
                   where your favorite
                   characters come to life in every detail.</p>
               </div>
@@ -97,7 +97,7 @@ export default function Home() {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="flex flex-row justify-between items-center gap-12 px-36"> 
+        <div className="flex flex-row justify-between items-center gap-12 px-6 md:px-36 "> 
           <div className="flex flex-col justify-center items-center mb-8 max-w-[30vw] max-h-[80vh]">
             <h3 className="text-2xl font-extrabold text-gray-400">Bring Your Favorite Characters to Life</h3>
             <p className="text-gray-200 mt-2">Custom-crafted cosplay costumes, props, and accessories
@@ -126,8 +126,8 @@ export default function Home() {
             : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="flex flex-row justify-between gap-12 items-center px-36"> 
-          <div className="container max-w-[45vw] max-h-[50vh] min-w-[350px] rounded-4xl overflow-hidden">
+        <div className="flex flex-row justify-between gap-12 items-center px-6 md:px-36"> 
+          <div className="container max-w-[45vw] max-h-[50vh] min-w-[250px] rounded-4xl overflow-hidden">
             <Image
               src="/second_section.jpeg"
               alt="Second Section Image"

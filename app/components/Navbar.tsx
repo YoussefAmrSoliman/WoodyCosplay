@@ -16,7 +16,7 @@ const Navbar = () => {
             
             <div className={`md:hidden absolute top-full right-0 w-40
                 bg-white shadow-lg rounded-3xl mt-2 z-50 flex flex-col
-                ${isOpen ? '-translate-x-1': 'translate-x-full'} 
+                ${isOpen ? '-translate-x-1 opacity-100': 'translate-x-full opacity-0'} 
                 transition-all duration-300`}>
                 <button className="py-2 px-4
                     text-gray-900 hover:bg-gray-100
